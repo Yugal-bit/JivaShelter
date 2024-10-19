@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pet Adoption Page</title>
+<link rel="stylesheet" href="pets.css">
+</head>
+<body>
+  <header class="header">
+    <h4 class="header-title"><a href="index.html">JivaShelter</a></h4>
+    <nav class="header-nav">
+      <ul class="header-list">
+        <li><a href="dogs.html">dogs & puppies</a></li>
+        <li><a href="cats.html">cats & kittens</a></li>
+        <li><a href="other-pets.html">other pets</a></li>
+      </ul>
+    </nav>
+    <div><button class="header-button">donate</button></div>
+  </header>
+
+<div class="title-section">
+    <h2>Dogs</h2>
+</div>
+
+<div class="container">
+  <div class="pet-box">
+    <img src="images/dogs/Iris.jpg" alt="Iris"> 
+    <h2>Buffet</h2>
+    <p>Paws Care, Pune</p>
+    <button class="adopt-btn" onclick="redirectToAdoptPage('Buffet')">Adopt Now</button>
+  </div>
+  <div class="pet-box">
+    <img src="images/dogs/Domino.jpg" alt="Domino">
+    <h2>Domino</h2>
+    <p>Sihagad animal welfare, Pune</p>
+    <button class="adopt-btn" onclick="redirectToAdoptPage('Domino')">Adopt Now</button>
+  </div>
+  <div class="pet-box">
+    <img src="images/Meesa.jpg" alt="Meesa">
+    <h2>Manu</h2>
+    <p>Sihagad animal welfare, Pune</p>
+    <button class="adopt-btn" onclick="redirectToAdoptPage('Manu')">Adopt Now</button>
+  </div>
+  
+  <div class="pet-box">
+    <img src="images/Orion.jpg" alt="Orion">
+    <h2>Onion</h2>
+    <p>Make new life NGO, Pune</p>
+    <button class="adopt-btn" onclick="redirectToAdoptPage('Onion')">Adopt Now</button>
+  </div>
+  <div class="pet-box">
+    <img src="images/Rozzo.jpg" alt="Rozzo">
+    <h2>Ragaa</h2>
+    <p>Paws Care, Pune</p>
+    <button class="adopt-btn" onclick="redirectToAdoptPage('Ragaa')">Adopt Now</button>
+  </div>
+  <div class="pet-box">
+    <img src="images/dogs/Stevie.jpg" alt="Stevie">
+    <h2>Kanchi</h2>
+    <button class="adopt-btn" onclick="redirectToAdoptPage('Kanchi')">Adopt Now</button>
+  </div>
+
+  <div class="pet-box">
+    <img src="https://imgs.search.brave.com/ZaqANHLQp5CbIXjXbZn0Hb7V4l45dZbR5Jbpzj9LX60/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9icmVl/ZC1hc3NldHMud2lz/ZG9tcGFuZWwuY29t/L2RvZy9zdHJlZXQt/ZG9nLWluZGlhL0lu/ZGlhbl9TdHJlZXRf/RG9nMS5qcGc" alt="Alex">
+    <h2>Alexa</h2>
+    <button class="adopt-btn" onclick="redirectToAdoptPage('Alexa')">Adopt Now</button>
+  </div>
+  <div class="pet-box">
+    <img src="images/dogs/Yamon.jpg" alt="Yamon">
+    <h2>Babbu</h2>
+    <p>Animal rescue trust, Pune</p>
+    <button class="adopt-btn" onclick="redirectToAdoptPage('Babbu')">Adopt Now</button>
+  </div>
+  <div class="pet-box">
+    <img src="images/dogs/wiebie.jpg" alt="Wiebie">
+    <h2>Lawang</h2>
+    <p>Paws care NGO, Pune</p>
+    <button class="adopt-btn" onclick="redirectToAdoptPage('Lawang')">Adopt Now</button>
+  </div>
+
+  <div class="pet-box">
+    <img src="images/dogs/nora.jpg" alt="Nora">
+    <h2>Nora</h2>
+    <p>Sihagad animal welfare, Pune</p>
+    <button class="adopt-btn" onclick="redirectToAdoptPage('Nora')">Adopt Now</button>
+  </div>
+</div>
+
+<script>
+  function redirectToAdoptPage(dogName) {
+    // Redirect to adopt.html with the dog's name as a query parameter
+    window.location.href = `adopt.html?dog=${encodeURIComponent(dogName)}`;
+  }
+</script>
+
+<script src="main.js"></script>
+
+</body>
+</html>

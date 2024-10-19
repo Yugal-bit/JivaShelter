@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration Successful</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <h1>Thank you for registering, <span id="username"></span>!</h1>
+  <p>You will receive updates on pet adoption and pet care at <span id="useremail"></span>.</p>
+
+  <script>
+    // Retrieve the user's name and email from local storage
+    const name = localStorage.getItem('name');
+    const email = localStorage.getItem('email');
+
+    // Display the name and email on the page
+    document.getElementById('username').textContent = name ? name : 'User';
+    document.getElementById('useremail').textContent = email ? email : 'your email address';
+
+    // Clear the localStorage after showing the message (optional)
+    // localStorage.removeItem('name');
+    // localStorage.removeItem('email');
+  </script>
+</body>
+</html>

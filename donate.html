@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate to Animal Shelter Homes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h4>Support Our Animal Shelter Homes</h4>
+        <p>Your donation can make a huge difference in the lives of these innocent animals.</p>
+    </header>
+    <main>
+        <section class="donation-form">
+            <h2>Make a Donation</h2>
+            <form id="donationForm" onsubmit="handleSubmit(event)">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="amount">Donation Amount:</label>
+                <input type="number" id="amount" name="amount" min="1" required>
+
+                <label for="message">Message (Optional):</label>
+                <textarea id="message" name="message"></textarea>
+
+                <button type="submit">Donate Now</button>
+            </form>
+            <button onclick="goBack()">Back to Home</button>
+        </section>
+       
+    </main>
+   
+    <script src="main.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adoption Page</title>
+</head>
+<body>
+
+  <h1>Adopt a Pet</h1>
+  <p id="dog-name"></p>
+
+  <!-- Container for the Google Form -->
+  <div id="form-container"></div>
+
+  <script>
+    // Get the dog's name from the URL
+    const params = new URLSearchParams(window.location.search);
+    const dogName = params.get('dog');
+
+    // Display the dog's name and show the Google form
+    if (dogName) {
+      document.getElementById('dog-name').textContent = `Fill out the form to adopt: ${dogName}`;
+      
+      // Embed the Google form
+      document.getElementById('form-container').innerHTML = `
+        <iframe src="https://docs.google.com/forms/d/e/your-google-form-id/viewform?embedded=true" 
+        width="640" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>`;
+    } else {
+      document.getElementById('dog-name').textContent = 'No dog selected.';
+    }
+  </script>
+
+</body>
+</html>
