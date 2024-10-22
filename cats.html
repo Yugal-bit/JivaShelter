@@ -18,60 +18,55 @@
       
     </ul>
   </nav>
-  <div><button class="header-button">donate</button></div>
+  <!-- <div><button class="header-button">donate</button></div> -->
 </header>
 <div class="title-section">
     <h2>Cats</h2>
 </div>
 <div class="container">
   <div class="pet-box">
-    <img src="images/Cats/1.png" alt="Pet 1">
-    <h2>Pirate</h2>
-    <p></p>
-    <button class="adopt-btn">Adopt Now</button>
+    <img src="https://www.mrnmrspet.com/Files/82024/290257202408130046494504.jpeg" alt="Pet 1">
+    <h2>Simba, Kalu, Oreo, Santra, 2M</h2>
+    <p>Indian Breed</p>
+    <P> </P>
+    <p> </p>
+    <p>Kalyani Nagar, Pune</p>
+    <button class="adopt-btn" onclick="redirectToAdoptPage('Buffet')">Adopt Now</button>
   </div>
   <div class="pet-box">
-    <img src="images/Cats/2.png" alt="Pet 2">
-    <h2>Petli</h2>
-    <p></p>
-    <button class="adopt-btn">Adopt Now</button>
+    <img src="https://www.mrnmrspet.com/Files/12024/208616202401212243068235.jpg" alt="Pet 2">
+    <h2>Ruby, 10M</h2>
+    <p>Indian Breed</p>
+    <p>Bibewadi, Pune</p>
+    <button class="adopt-btn" onclick="redirectToAdoptPage('')">Adopt Now</button>
   </div>
   <div class="pet-box">
-    <img src="images/Cats/3.png"Pet 3">
-    <h2>Bunny</h2>
-    <p></p>
-    <button class="adopt-btn">Adopt Now</button>
+    <img src="https://www.mrnmrspet.com/Files/12024/206716202401161942172518.jpeg"Pet 3">
+    <h2>Ellu, 8M</h2>
+    <p>Indian Breed </p>
+    <p>Sai Nagar Kondhwa, Pune</p>
+    <button class="adopt-btn" onclick="redirectToAdoptPage('')">Adopt Now</button>
   </div>
   
   <div class="pet-box">
-    <img src="images/Cats/4.png" alt="Pet 1">
-    <h2>Billa</h2>
-    <p></p>
-    <button class="adopt-btn">Adopt Now</button>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEBpakE9K-ajaVLb-GP3HOKIrSOYHSCLJmrg&s" alt="Pet 1">
+    <h2>Billu, 2.5yrs</h2>
+    <p>Indian Persian cross</p>
+    <p>Hadapsar, Pune</p>
+    <button class="adopt-btn" onclick="redirectToAdoptPage('')">Adopt Now</button>
   </div>
-  <div class="pet-box">
-    <img src="images/Cats/5.png" alt="Pet 2">
-    <h2>Pepita</h2>
-    <p></p>
-    <button class="adopt-btn">Adopt Now</button>
-  </div>
-  <div class="pet-box">
-    <img src="images/Cats/6.png" alt="Pet 3">
-    <h2>Lulu</h2>
-    <p></p>
-    <button class="adopt-btn">Adopt Now</button>
-  </div>
-
-  <div class="pet-box">
-    <img src="images/Cats/7.png" alt="Pet 1">
-    <h2>Mona</h2>
-    <p></p>
-    <button class="adopt-btn">Adopt Now</button>
-  </div>
+ 
+  
   
 
   <!-- Add more pet boxes here -->
 </div>
+<script>
+  function redirectToAdoptPage(dogName) {
+    // Redirect to adopt.html with the dog's name as a query parameter
+    window.location.href = `https://docs.google.com/forms/d/e/1FAIpQLSft3RN1-ExZ_em_LEeNQizCWJ8i1mcbwQh6QPABplumKb1-Kw/viewform?usp=sf_link?dog=${encodeURIComponent(dogName)}`;
+  }
+</script>
  
  
 <script src="main.js">

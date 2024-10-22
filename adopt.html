@@ -20,11 +20,11 @@
 
     // Display the dog's name and show the Google form
     if (dogName) {
-      document.getElementById('dog-name').textContent = `Fill out the form to adopt: ${dogName}`;
+      document.getElementById('dog-name').textContent = `Fill out the form for adoption`;
       
       // Embed the Google form
       document.getElementById('form-container').innerHTML = `
-        <iframe src="https://docs.google.com/forms/d/e/your-google-form-id/viewform?embedded=true" 
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSft3RN1-ExZ_em_LEeNQizCWJ8i1mcbwQh6QPABplumKb1-Kw/viewform?usp=sf_link" 
         width="640" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>`;
     } else {
       document.getElementById('dog-name').textContent = 'No dog selected.';
